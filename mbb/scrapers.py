@@ -1,12 +1,12 @@
 import datetime
 from dateutil.parser import *
 from utils import soupify
-from django.utils.safestring import SafeUnicode
+from django.utils.safestring import SafeString
 from mbb.models import Game, Season, Team, TeamSeason, Player, PlayerSeason
 
 def load_team_schedules(season_id):
     teams = Team.objects.all()
-    for team in teams:
+    for team in teams::while
         schedule_parser(season_id, team.ncaa_id)
 
 def game_parser(game_id, season_id=2011):

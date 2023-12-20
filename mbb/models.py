@@ -1,6 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
-from django.utils.encoding import smart_unicode
+from django.utils.encoding import smart_str
 from decimal import *
 
 class Team(models.Model):
